@@ -1,6 +1,4 @@
 LOCAL_PATH := $(call my-dir)
-
-ifneq ($(QCPATH),)
 # Build libagm_pcm_plugin
 include $(CLEAR_VARS)
 
@@ -40,9 +38,7 @@ LOCAL_HEADER_LIBRARIES += libaudiologutils_headers
 endif
 
 include $(BUILD_SHARED_LIBRARY)
-endif
 
-ifneq ($(QCPATH),)
 # Build libagm_mixer_plugin
 include $(CLEAR_VARS)
 
@@ -80,9 +76,7 @@ LOCAL_HEADER_LIBRARIES += libaudiologutils_headers
 endif
 
 include $(BUILD_SHARED_LIBRARY)
-endif
 
-ifneq ($(QCPATH),)
 # Build libagm_compress_plugin
 include $(CLEAR_VARS)
 
@@ -127,5 +121,4 @@ LOCAL_HEADER_LIBRARIES += libaudiologutils_headers
 endif
 
 include $(BUILD_SHARED_LIBRARY)
-endif
 
